@@ -6,7 +6,7 @@ import time
 def importlist(list):
     # Import from raw data for usage in the game
     # First convert CSV to usable data
-    with open(f'lists/{list}.csv', newline='') as file:
+    with open(f'{list}.csv', newline='') as file:
         readin = csv.reader(file, quotechar='|')
         read = []
         for row in readin:
